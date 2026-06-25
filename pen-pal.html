@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pen Pal Program | Elderly Smiles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img class="site-logo" src="Logos/Elderly Smiles Official LOGO.png" alt="Elderly Smiles logo" />
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="chapters.html">Chapters</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="mailing-list.html">Mailing list</a>
+      <a href="learn-more.html">Learn More</a>
+      <a href="pen-pal.html">Pen Pals</a>
+      <a class="nav-cta" href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Open Your Wings</p>
+          <h1>Write letters that bring connection and warmth to older adults.</h1>
+          <p>Elderly Smiles helps seniors build agency and belonging through meaningful written connections. Share your voice, and we’ll guide you through thoughtful letter writing that feels respectful and uplifting.</p>
+          <a class="btn btn-primary" href="#penpal-form">Sign up to write</a>
+        </div>
+        <div class="hero-visual">
+          <div class="image-holder">
+            <img src="Images/IMG_1780.jpg" alt="Older adult writing a letter" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="penpal-details">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="about-eyebrow">How it works</p>
+          <h2>We guide your letters from draft to delivery with care and privacy.</h2>
+          <p>When you sign up, we’ll send you a simple packet with writing tips, stationery ideas, and safe mailing instructions for local nursing home residents. Your information is used only to follow up and help you create a letter that brings comfort.</p>
+          <ul class="newsletter-list">
+            <li>Receive program details and safe letter guidance</li>
+            <li>Share a little about your interests and what you’d like to write</li>
+            <li>We match you with a resident who will benefit from friendly messages</li>
+            <li>We never share your contact details without your permission</li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="about-image">
+            <img src="Images/Resized_20250209_104518_1739144468242.jpg" alt="Older adult reading a letter" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offerings-section" id="penpal-form">
+      <div class="section-content">
+        <p class="section-eyebrow">Get started</p>
+        <h2>Tell us a bit about yourself and your letter idea.</h2>
+        <p>Fill in the form below, and we’ll reach out with the next steps for sending your first letter to a nursing home resident.</p>
+        <form id="penpal-form" class="newsletter-form" action="https://formspree.io/f/xgojvbez" method="POST">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            A short note about your interest
+            <textarea name="interest_note" placeholder="Tell us briefly why you'd like to be a pen pal" rows="4" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Submit interest</button>
+        </form>
+        <p class="privacy-note">Thanks — after you submit this short interest form we will email you the full application and next steps to become a Pen Pal.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials removed on non-home pages -->
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var penpalForm = document.getElementById('penpal-form');
+      if (!penpalForm) return;
+
+      penpalForm.addEventListener('submit', function (event) {
+        // Let the form submit normally to Formspree
+        // Show a confirmation message
+        setTimeout(function () {
+          alert('Thank you! Your interest has been saved. We\'ll send you the full application soon.');
+        }, 100);
+      });
+    });
+  </script>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="chapters.html">Chapters</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="mailing-list.html">Mailing list</a>
+        <a href="learn-more.html">Learn More</a>
+        <a href="pen-pal.html">Pen Pals</a>
+        <a href="join.html">Join</a>
+      </div>
+      <div class="footer-center-logo">
+        <img class="footer-logo" src="Logos/Elderly Smiles Official LOGO.png" alt="Elderly Smiles logo" />
+      </div>
+      <div class="footer-info">
+        <div class="footer-item">
+          <span>Follow us</span>
+          <p>Instagram: @nathaliaisabelhurtado</p>
+        </div>
+        <div class="footer-item">
+          <span>Contact</span>
+          <p>elderlysmiles.project@gmail.com</p>
+        </div>
+        <div class="footer-item">
+          <span>Locations</span>
+          <p>Miami, FL</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

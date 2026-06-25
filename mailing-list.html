@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mailing List | Elderly Smiles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img class="site-logo" src="Logos/Elderly Smiles Official LOGO.png" alt="Elderly Smiles logo" />
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="chapters.html">Chapters</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="mailing-list.html">Mailing list</a>
+      <a href="learn-more.html">Learn More</a>
+      <a href="pen-pal.html">Pen Pals</a>
+      <a class="nav-cta" href="join.html">Join</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Open Your Wings</p>
+          <h1>Subscribe for healthy aging resources and support.</h1>
+          <p>Receive recipes, gentle movement ideas, professional confidence tips, and senior wellbeing stories designed to help aging feel empowered and graceful.</p>
+          <a class="btn btn-primary" href="#newsletter-form">Sign up now</a>
+        </div>
+        <div class="hero-visual">
+          <div class="image-holder">
+            <img src="Images/IMG_4677.jpg" alt="Older adult enjoying a healthy meal" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="news-details">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="about-eyebrow">What you'll receive</p>
+          <h2>Practical tools for elegant, healthy aging.</h2>
+          <p>As a subscriber, you'll receive accessible recipes, gentle movement ideas, digital confidence guides, and community updates that support aging with dignity.</p>
+          <ul class="newsletter-list">
+            <li>Brain-healthy meal ideas and simple recipes</li>
+            <li>Gentle exercise and mobility guidance</li>
+            <li>Professional curation and confidence-building tips</li>
+            <li>Style and self-care inspiration for older adults</li>
+            <li>Privacy-respecting communication</li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="about-image">
+            <img src="Images/IMG_1555.jpg" alt="Older adult enjoying a gentle movement activity" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offerings-section" id="newsletter-form">
+      <div class="section-content">
+        <p class="section-eyebrow">Sign up</p>
+        <h2>Subscribe in seconds</h2>
+        <p>Fill in your details below and we'll welcome you with our next issue. We only send meaningful updates, and you can unsubscribe at any time.</p>
+        <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/xgojvbez" method="POST">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Interests (optional)
+            <select name="interests">
+              <option value="community">Community programs</option>
+              <option value="volunteering">Volunteering</option>
+              <option value="events">Events</option>
+              <option value="resources">Care resources</option>
+              <option value="updates">All updates</option>
+            </select>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="consent" required />
+            I agree to receive Elderly Smiles mailing list updates and understand I can unsubscribe at any time.
+          </label>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="privacy-note">We respect your privacy. Your contact information is stored securely and used only for Elderly Smiles updates.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials removed on non-home pages -->
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="chapters.html">Chapters</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="mailing-list.html">Mailing list</a>
+        <a href="learn-more.html">Learn More</a>
+        <a href="pen-pal.html">Pen Pals</a>
+        <a href="join.html">Join</a>
+      </div>
+      <div class="footer-center-logo">
+        <img class="footer-logo" src="Logos/Elderly Smiles Official LOGO.png" alt="Elderly Smiles logo" />
+      </div>
+      <div class="footer-info">
+        <div class="footer-item">
+          <span>Follow us</span>
+          <p>Instagram: @nathaliaisabelhurtado</p>
+        </div>
+        <div class="footer-item">
+          <span>Contact</span>
+          <p>elderlysmiles.project@gmail.com</p>
+        </div>
+        <div class="footer-item">
+          <span>Locations</span>
+          <p>Miami, FL</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var newsletterForm = document.getElementById('newsletter-form');
+      if (!newsletterForm) return;
+
+      newsletterForm.addEventListener('submit', function (event) {
+        // Let the form submit normally to Formspree
+        // Show a confirmation message
+        setTimeout(function () {
+          alert('Welcome! You\'ve been added to our mailing list.');
+        }, 100);
+      });
+    });
+  </script>
+</body>
+</html>

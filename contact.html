@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Elderly Smiles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img class="site-logo" src="Logos/Elderly Smiles Official LOGO.png" alt="Elderly Smiles logo" />
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="chapters.html">Chapters</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="mailing-list.html">Mailing list</a>
+      <a href="learn-more.html">Learn More</a>
+      <a href="pen-pal.html">Pen Pals</a>
+      <a class="nav-cta" href="join.html">Join</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Open Your Wings</p>
+          <h1>Contact Elderly Smiles to support elegant, connected aging.</h1>
+          <p>Whether you have a question about volunteering, partnership, or program support, we’ll respond with clarity, care, and respect for each older adult we serve.</p>
+          <a class="btn btn-primary" href="#contact-form">Send a message</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="contact-details">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="about-eyebrow">Contact options</p>
+          <h2>Reach out for volunteer, chapter, or support inquiries.</h2>
+          <p>We’re here to help older adults thrive with stronger routines, meaningful connection, and more confidence in daily life.</p>
+          <ul class="newsletter-list">
+            <li>Email us: elderlysmiles.project@gmail.com</li>
+            <li>Office hours: Monday – Friday, 9am – 9pm</li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="about-image">
+            <img src="Images/IMG_3962.jpg" alt="Volunteers and older adults connecting" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offerings-section" id="contact-form">
+      <div class="section-content">
+        <p class="section-eyebrow">Send us a message</p>
+        <h2>Fill out the form and we’ll follow up promptly.</h2>
+        <p>Provide a few details so we can best respond to your question, request, or partnership interest.</p>
+        <form id="contact-form" class="newsletter-form" action="https://formspree.io/f/xgojvbez" method="POST">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Phone number
+            <input type="tel" name="phone" placeholder="Optional" />
+          </label>
+          <label>
+            Reason for contact
+            <select name="reason" required>
+              <option value="support">Request support</option>
+              <option value="volunteer">Volunteer interest</option>
+              <option value="partnership">Partnership inquiry</option>
+              <option value="donation">Donation question</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>
+            Your message
+            <textarea name="message" placeholder="Tell us how we can help" rows="6" required></textarea>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="consent" required />
+            I agree to be contacted by Elderly Smiles for the purpose of responding to this inquiry.
+          </label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+        <p class="privacy-note">We reply with care and keep your information safe. You may unsubscribe from updates at any time.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials removed on non-home pages -->
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var contactForm = document.getElementById('contact-form');
+      if (!contactForm) return;
+
+      contactForm.addEventListener('submit', function (event) {
+        // Let the form submit normally to Formspree
+        // Show a confirmation message
+        setTimeout(function () {
+          alert('Thank you! Your message has been saved. We\'ll follow up soon.');
+        }, 100);
+      });
+    });
+  </script>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="chapters.html">Chapters</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="mailing-list.html">Mailing list</a>
+        <a href="learn-more.html">Learn More</a>
+        <a href="pen-pal.html">Pen Pals</a>
+        <a href="join.html">Join</a>
+      </div>
+      <div class="footer-center-logo">
+        <img class="footer-logo" src="Logos/Elderly Smiles Official LOGO.png" alt="Elderly Smiles logo" />
+      </div>
+      <div class="footer-info">
+        <div class="footer-item">
+          <span>Follow us</span>
+          <p>Instagram: @nathaliaisabelhurtado</p>
+        </div>
+        <div class="footer-item">
+          <span>Contact</span>
+          <p>elderlysmiles.project@gmail.com</p>
+        </div>
+        <div class="footer-item">
+          <span>Locations</span>
+          <p>Miami, FL</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
